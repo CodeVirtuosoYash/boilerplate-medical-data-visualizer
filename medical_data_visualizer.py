@@ -45,7 +45,7 @@ def draw_heat_map():
                  (df['weight'] >= df['weight'].quantile(0.025)) &
                  (df['weight'] <= df['weight'].quantile(0.975))]
 
-    df_heat = df_heat.drop(columns=['bmi'])  # Remove 'bmi' from heatmap data
+    df_heat = df_heat.drop(columns=['bmi']) 
 
     # 12
     corr = df_heat.corr()
